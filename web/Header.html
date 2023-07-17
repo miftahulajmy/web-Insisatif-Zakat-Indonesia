@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Navigation Bar</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+        <style>
+            #menu-nav {
+                background-color: white;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            #navigation-bar ul {
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            #navigation-bar li {
+                float: left;
+                width: 15%;
+            }
+            #navigation-bar li:hover a::before {
+                right: 0;
+                left: 0;
+            }
+            #navigation-bar a {
+                color: #848484;
+                font-size: 20px;
+                text-decoration: none;
+                text-align: center;
+                padding: 20px 0;
+                display: block;
+                position: relative;
+                transition: all 0.3s ease;
+            }
+            #navigation-bar a:hover {
+                color: #188B22;
+            }
+            #navigation-bar a::before {
+                content: "";
+                transition: all 0.4s ease-in-out;
+                position: absolute;
+                bottom: 0;
+                height: 2px;
+                background-color: white;
+            }
+            #navigation-bar a:hover::before {
+                right: 0;
+                left: 0;
+            }
+            li {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <link rel="stylesheet" href="CSS.css">
+    <body>
+        <div id="menu-nav">
+            <div id="navigation-bar">
+                <ul>
+                    <li><img src="lh.png"></li>
+                    <li><a href="data_pendaftar.jsp"><span>Data Pendaftar</span></a></li>
+                    <li><a href="data_co.jsp"><span>Data Checkout</span></a></li>
+                    <li><a href="LogoutSession"><span>Logout</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
